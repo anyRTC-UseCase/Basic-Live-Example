@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07E54DB525BFB20500F49FA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54DB425BFB20500F49FA0 /* AppDelegate.m */; };
+		07E54DB825BFB20500F49FA0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54DB725BFB20500F49FA0 /* SceneDelegate.m */; };
+		07E54DBB25BFB20500F49FA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54DBA25BFB20500F49FA0 /* ViewController.m */; };
+		07E54DBE25BFB20500F49FA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E54DBC25BFB20500F49FA0 /* Main.storyboard */; };
+		07E54DC025BFB20700F49FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E54DBF25BFB20700F49FA0 /* Assets.xcassets */; };
+		07E54DC325BFB20700F49FA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E54DC125BFB20700F49FA0 /* LaunchScreen.storyboard */; };
+		07E54DC625BFB20700F49FA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54DC525BFB20700F49FA0 /* main.m */; };
+		07E54E8D25C02D3F00F49FA0 /* UIView+ARExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54E8B25C02D3F00F49FA0 /* UIView+ARExtension.m */; };
+		07E54E9125C02D5200F49FA0 /* ARHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54E9025C02D5200F49FA0 /* ARHomeViewController.m */; };
+		07E54E9525C02D5B00F49FA0 /* ARRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54E9425C02D5B00F49FA0 /* ARRoomViewController.m */; };
+		07E54E9A25C02D7500F49FA0 /* ARVideoShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E54E9725C02D7500F49FA0 /* ARVideoShowCell.xib */; };
+		07E54E9B25C02D7500F49FA0 /* ARVideoShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54E9925C02D7500F49FA0 /* ARVideoShowCell.m */; };
+		07E54E9F25C02D7F00F49FA0 /* ARItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E54E9E25C02D7F00F49FA0 /* ARItemModel.m */; };
+		92A7B9895033C1AB739AA72F /* Pods_AR_iOS_VideoLive_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F672BC3C7ECE295A17F16387 /* Pods_AR_iOS_VideoLive_Base.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07E54DB025BFB20500F49FA0 /* AR-iOS-VideoLive-Base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-iOS-VideoLive-Base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E54DB325BFB20500F49FA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07E54DB425BFB20500F49FA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07E54DB625BFB20500F49FA0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		07E54DB725BFB20500F49FA0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		07E54DB925BFB20500F49FA0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		07E54DBA25BFB20500F49FA0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07E54DBD25BFB20500F49FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07E54DBF25BFB20700F49FA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07E54DC225BFB20700F49FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07E54DC425BFB20700F49FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E54DC525BFB20700F49FA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07E54E8725C02CB600F49FA0 /* ARPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPrefixHeader.pch; sourceTree = "<group>"; };
+		07E54E8825C02CB600F49FA0 /* ARConstanst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARConstanst.h; sourceTree = "<group>"; };
+		07E54E8B25C02D3F00F49FA0 /* UIView+ARExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ARExtension.m"; sourceTree = "<group>"; };
+		07E54E8C25C02D3F00F49FA0 /* UIView+ARExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ARExtension.h"; sourceTree = "<group>"; };
+		07E54E8F25C02D5200F49FA0 /* ARHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARHomeViewController.h; sourceTree = "<group>"; };
+		07E54E9025C02D5200F49FA0 /* ARHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARHomeViewController.m; sourceTree = "<group>"; };
+		07E54E9325C02D5B00F49FA0 /* ARRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARRoomViewController.h; sourceTree = "<group>"; };
+		07E54E9425C02D5B00F49FA0 /* ARRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARRoomViewController.m; sourceTree = "<group>"; };
+		07E54E9725C02D7500F49FA0 /* ARVideoShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARVideoShowCell.xib; sourceTree = "<group>"; };
+		07E54E9825C02D7500F49FA0 /* ARVideoShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARVideoShowCell.h; sourceTree = "<group>"; };
+		07E54E9925C02D7500F49FA0 /* ARVideoShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARVideoShowCell.m; sourceTree = "<group>"; };
+		07E54E9D25C02D7F00F49FA0 /* ARItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARItemModel.h; sourceTree = "<group>"; };
+		07E54E9E25C02D7F00F49FA0 /* ARItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARItemModel.m; sourceTree = "<group>"; };
+		5893AAE052880BAD491A04C7 /* Pods-AR-iOS-VideoLive-Base.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-iOS-VideoLive-Base.debug.xcconfig"; path = "Target Support Files/Pods-AR-iOS-VideoLive-Base/Pods-AR-iOS-VideoLive-Base.debug.xcconfig"; sourceTree = "<group>"; };
+		B692CD8F9446884693875BEE /* Pods-AR-iOS-VideoLive-Base.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-iOS-VideoLive-Base.release.xcconfig"; path = "Target Support Files/Pods-AR-iOS-VideoLive-Base/Pods-AR-iOS-VideoLive-Base.release.xcconfig"; sourceTree = "<group>"; };
+		F672BC3C7ECE295A17F16387 /* Pods_AR_iOS_VideoLive_Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_iOS_VideoLive_Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07E54DAD25BFB20500F49FA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A7B9895033C1AB739AA72F /* Pods_AR_iOS_VideoLive_Base.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07E54DA725BFB20500F49FA0 = {
+			isa = PBXGroup;
+			children = (
+				07E54DB225BFB20500F49FA0 /* AR-iOS-VideoLive-Base */,
+				07E54DB125BFB20500F49FA0 /* Products */,
+				7C109146783CAF9A6744060C /* Pods */,
+				9443CCFF197820F251E325BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07E54DB125BFB20500F49FA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07E54DB025BFB20500F49FA0 /* AR-iOS-VideoLive-Base.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07E54DB225BFB20500F49FA0 /* AR-iOS-VideoLive-Base */ = {
+			isa = PBXGroup;
+			children = (
+				07E54E8A25C02CCC00F49FA0 /* Main */,
+				07E54E8925C02CC400F49FA0 /* CustomClass */,
+				07E54DB325BFB20500F49FA0 /* AppDelegate.h */,
+				07E54DB425BFB20500F49FA0 /* AppDelegate.m */,
+				07E54DB625BFB20500F49FA0 /* SceneDelegate.h */,
+				07E54DB725BFB20500F49FA0 /* SceneDelegate.m */,
+				07E54DB925BFB20500F49FA0 /* ViewController.h */,
+				07E54DBA25BFB20500F49FA0 /* ViewController.m */,
+				07E54E8825C02CB600F49FA0 /* ARConstanst.h */,
+				07E54E8725C02CB600F49FA0 /* ARPrefixHeader.pch */,
+				07E54DBC25BFB20500F49FA0 /* Main.storyboard */,
+				07E54DBF25BFB20700F49FA0 /* Assets.xcassets */,
+				07E54DC125BFB20700F49FA0 /* LaunchScreen.storyboard */,
+				07E54DC425BFB20700F49FA0 /* Info.plist */,
+				07E54DC525BFB20700F49FA0 /* main.m */,
+			);
+			path = "AR-iOS-VideoLive-Base";
+			sourceTree = "<group>";
+		};
+		07E54E8925C02CC400F49FA0 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				07E54E8C25C02D3F00F49FA0 /* UIView+ARExtension.h */,
+				07E54E8B25C02D3F00F49FA0 /* UIView+ARExtension.m */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		07E54E8A25C02CCC00F49FA0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				07E54E8F25C02D5200F49FA0 /* ARHomeViewController.h */,
+				07E54E9025C02D5200F49FA0 /* ARHomeViewController.m */,
+				07E54E9325C02D5B00F49FA0 /* ARRoomViewController.h */,
+				07E54E9425C02D5B00F49FA0 /* ARRoomViewController.m */,
+				07E54E9825C02D7500F49FA0 /* ARVideoShowCell.h */,
+				07E54E9925C02D7500F49FA0 /* ARVideoShowCell.m */,
+				07E54E9725C02D7500F49FA0 /* ARVideoShowCell.xib */,
+				07E54E9D25C02D7F00F49FA0 /* ARItemModel.h */,
+				07E54E9E25C02D7F00F49FA0 /* ARItemModel.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7C109146783CAF9A6744060C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5893AAE052880BAD491A04C7 /* Pods-AR-iOS-VideoLive-Base.debug.xcconfig */,
+				B692CD8F9446884693875BEE /* Pods-AR-iOS-VideoLive-Base.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9443CCFF197820F251E325BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F672BC3C7ECE295A17F16387 /* Pods_AR_iOS_VideoLive_Base.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07E54DAF25BFB20500F49FA0 /* AR-iOS-VideoLive-Base */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E54DC925BFB20700F49FA0 /* Build configuration list for PBXNativeTarget "AR-iOS-VideoLive-Base" */;
+			buildPhases = (
+				86F6D15A210F06538697A361 /* [CP] Check Pods Manifest.lock */,
+				07E54DAC25BFB20500F49FA0 /* Sources */,
+				07E54DAD25BFB20500F49FA0 /* Frameworks */,
+				07E54DAE25BFB20500F49FA0 /* Resources */,
+				B722CD5C2BDC54D8F6E035A5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR-iOS-VideoLive-Base";
+			productName = "AR-iOS-VideoLive-Base";
+			productReference = 07E54DB025BFB20500F49FA0 /* AR-iOS-VideoLive-Base.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07E54DA825BFB20500F49FA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					07E54DAF25BFB20500F49FA0 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 07E54DAB25BFB20500F49FA0 /* Build configuration list for PBXProject "AR-iOS-VideoLive-Base" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07E54DA725BFB20500F49FA0;
+			productRefGroup = 07E54DB125BFB20500F49FA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07E54DAF25BFB20500F49FA0 /* AR-iOS-VideoLive-Base */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07E54DAE25BFB20500F49FA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E54DC325BFB20700F49FA0 /* LaunchScreen.storyboard in Resources */,
+				07E54DC025BFB20700F49FA0 /* Assets.xcassets in Resources */,
+				07E54E9A25C02D7500F49FA0 /* ARVideoShowCell.xib in Resources */,
+				07E54DBE25BFB20500F49FA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86F6D15A210F06538697A361 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR-iOS-VideoLive-Base-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B722CD5C2BDC54D8F6E035A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AR-iOS-VideoLive-Base/Pods-AR-iOS-VideoLive-Base-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AR-iOS-VideoLive-Base/Pods-AR-iOS-VideoLive-Base-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AR-iOS-VideoLive-Base/Pods-AR-iOS-VideoLive-Base-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07E54DAC25BFB20500F49FA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E54E9F25C02D7F00F49FA0 /* ARItemModel.m in Sources */,
+				07E54E9125C02D5200F49FA0 /* ARHomeViewController.m in Sources */,
+				07E54E9525C02D5B00F49FA0 /* ARRoomViewController.m in Sources */,
+				07E54E9B25C02D7500F49FA0 /* ARVideoShowCell.m in Sources */,
+				07E54DBB25BFB20500F49FA0 /* ViewController.m in Sources */,
+				07E54DB525BFB20500F49FA0 /* AppDelegate.m in Sources */,
+				07E54DC625BFB20700F49FA0 /* main.m in Sources */,
+				07E54DB825BFB20500F49FA0 /* SceneDelegate.m in Sources */,
+				07E54E8D25C02D3F00F49FA0 /* UIView+ARExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07E54DBC25BFB20500F49FA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07E54DBD25BFB20500F49FA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07E54DC125BFB20700F49FA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07E54DC225BFB20700F49FA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07E54DC725BFB20700F49FA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07E54DC825BFB20700F49FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07E54DCA25BFB20700F49FA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5893AAE052880BAD491A04C7 /* Pods-AR-iOS-VideoLive-Base.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5543CP4MRT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AR-iOS-VideoLive-Base/ARPrefixHeader.pch";
+				INFOPLIST_FILE = "AR-iOS-VideoLive-Base/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07E54DCB25BFB20700F49FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B692CD8F9446884693875BEE /* Pods-AR-iOS-VideoLive-Base.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5543CP4MRT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AR-iOS-VideoLive-Base/ARPrefixHeader.pch";
+				INFOPLIST_FILE = "AR-iOS-VideoLive-Base/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07E54DAB25BFB20500F49FA0 /* Build configuration list for PBXProject "AR-iOS-VideoLive-Base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E54DC725BFB20700F49FA0 /* Debug */,
+				07E54DC825BFB20700F49FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07E54DC925BFB20700F49FA0 /* Build configuration list for PBXNativeTarget "AR-iOS-VideoLive-Base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E54DCA25BFB20700F49FA0 /* Debug */,
+				07E54DCB25BFB20700F49FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07E54DA825BFB20500F49FA0 /* Project object */;
+}
