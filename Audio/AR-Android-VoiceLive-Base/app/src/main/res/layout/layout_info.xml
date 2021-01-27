@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_47">
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp_14"/>
+
+    <TextView
+        android:id="@+id/self"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/userId"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#FFFFFF"
+        android:text="(自己)" />
+
+    <TextView
+        android:id="@+id/txaudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rxaudio"
+        android:textColor="#1AFA29"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/up"/>
+
+    <TextView
+        android:id="@+id/rxaudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#1296DB"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginRight="@dimen/dp_20"
+        android:drawableLeft="@drawable/down"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#636363"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
