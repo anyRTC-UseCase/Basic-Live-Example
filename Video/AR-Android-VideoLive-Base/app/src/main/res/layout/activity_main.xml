@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:background="@color/bg_color">
 
     <EditText
         android:id="@+id/input"
@@ -12,13 +12,16 @@
         android:layout_marginLeft="@dimen/dp_20"
         android:layout_marginRight="@dimen/dp_20"
         android:hint="输入频道ID"
-        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_102"
+        android:paddingStart="@dimen/dp_17"
         android:maxLength="10"
         android:singleLine="true"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/white"
         android:background="@drawable/shape_et_bg"/>
 
     <LinearLayout
-        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_34"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_40"
         android:orientation="horizontal"
@@ -26,20 +29,24 @@
 
         <Button
             android:id="@+id/anchor"
-            android:layout_width="@dimen/dp_140"
             android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_20"
             android:text="主播加入"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/shape_btn_bg"/>
+            android:textColor="@color/white"
+            android:background="@drawable/selector_btn_bg"/>
 
         <Button
             android:id="@+id/guest"
-            android:layout_width="@dimen/dp_140"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_20"
             android:text="游客加入"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/shape_btn_bg"/>
+            android:textColor="@color/white"
+            android:background="@drawable/selector_btn_bg"/>
 
     </LinearLayout>
 

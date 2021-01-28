@@ -115,7 +115,7 @@ class VoiceLiveActivity:AppCompatActivity(),View.OnClickListener{
     private fun joinChannel() {
         mRtcEngine = RtcEngine.create(this,getString(R.string.ar_appid),mRtcEvent())
         mRtcEngine?.enableAudio()
-        mRtcEngine?.setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING)
+        mRtcEngine?.setChannelProfile(Constants.CHANNEL_PROFILE_COMMUNICATION)
         if (type ==1){
             mRtcEngine?.setClientRole(Constants.CLIENT_ROLE_BROADCASTER)
         }else{

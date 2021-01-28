@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/dp_47">
 
@@ -27,29 +28,27 @@
         android:id="@+id/txaudio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/rxaudio"
-        android:textColor="#1AFA29"
-        android:textSize="@dimen/sp_14"
-        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toStartOf="@+id/rxaudio"
+        android:textColor="@color/up_text_color"
+        android:textSize="@dimen/sp_11"
+        android:layout_marginEnd="@dimen/dp_10"
         android:layout_centerVertical="true"
-        android:drawableLeft="@drawable/up"/>
+        app:drawableStartCompat="@drawable/up" />
 
     <TextView
         android:id="@+id/rxaudio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:textColor="#1296DB"
-        android:textSize="@dimen/sp_14"
-        android:layout_marginRight="@dimen/dp_20"
-        android:drawableLeft="@drawable/down"/>
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/down_text_color"
+        android:textSize="@dimen/sp_11"
+        android:layout_marginEnd="@dimen/dp_20"
+        app:drawableStartCompat="@drawable/down" />
 
     <View
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:background="#636363"
-        android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"
+        android:background="@color/line_color"
         android:layout_alignParentBottom="true"/>
 </RelativeLayout>
