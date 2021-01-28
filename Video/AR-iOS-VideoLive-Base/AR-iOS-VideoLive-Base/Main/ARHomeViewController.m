@@ -27,11 +27,29 @@
 }
 
 - (IBAction)AnchorAction:(id)sender {
-    [self pushRoomControllerWithAnchor:YES];
+    if ([self.channelTF.text isEqualToString:@""]) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"频道id不能为空" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alert addAction:sureAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    } else {
+        [self pushRoomControllerWithAnchor:YES];
+    }
 }
 
 - (IBAction)AudienceAction:(id)sender {
-    [self pushRoomControllerWithAnchor:NO];
+    if ([self.channelTF.text isEqualToString:@""]) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"频道id不能为空" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alert addAction:sureAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    } else {
+        [self pushRoomControllerWithAnchor:NO];
+    }
 }
 
 

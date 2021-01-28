@@ -4,7 +4,7 @@
 //
 //  Created by anyRTC on 2021/1/26.
 //
-#define APPID               @"177e21c0d1641291c34e46e1198bd49a"
+#define APPID               @""
 #import "ARRoomViewController.h"
 #import "ARItemModel.h"
 #import "ARVideoShowCell.h"
