@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import android.util.Log
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
@@ -123,39 +124,45 @@ class VoiceLiveActivity:AppCompatActivity(),View.OnClickListener{
         }
         mRtcEngine?.setEnableSpeakerphone(true)
         mRtcEngine?.joinChannel(getString(R.string.ar_token),channelId,"",VoiceLive.voiceLive.userId)
-
     }
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_BACK){
+            release()
+            finish()
+            return true
+        }
+        return super.onKeyDown(keyCode, event)
+    }
+
 
     override fun onClick(p0: View?) {
         when(p0?.id){
             R.id.mic->{
-                if (isMic){
-                    viewBinding?.mic?.setImageResource(R.drawable.img_audio_open)
-                }else{
-                    viewBinding?.mic?.setImageResource(R.drawable.img_audio_close)
-                }
                 isMic =!isMic
+                viewBinding?.mic?.isSelected= isMic
                 mRtcEngine?.muteLocalAudioStream(isMic)
             }
             R.id.leave->{
+                release()
                 finish()
             }
             R.id.voice->{
-                if (isVoice){
-                    viewBinding?.voice?.setImageResource(R.drawable.img_voice_open)
-                }else{
-                    viewBinding?.voice?.setImageResource(R.drawable.img_voice_close)
-                }
                 isVoice =!isVoice
+                viewBinding?.voice?.isSelected =isVoice
                 mRtcEngine?.setEnableSpeakerphone(!isVoice)
             }
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    private fun release(){
         mRtcEngine?.leaveChannel()
         RtcEngine.destroy()
-        mRtcEngine =null
+        mRtcEngine=null
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        release()
     }
 }

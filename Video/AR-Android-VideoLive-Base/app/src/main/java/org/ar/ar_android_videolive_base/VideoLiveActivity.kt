@@ -145,21 +145,13 @@ class VideoLiveActivity : AppCompatActivity(),View.OnClickListener {
     override fun onClick(p0: View?) {
         when(p0?.id){
             R.id.mic ->{
-                if (isMic){
-                    viewBinding?.mic?.setImageResource(R.drawable.img_audio_open)
-                }else{
-                    viewBinding?.mic?.setImageResource(R.drawable.img_audio_close)
-                }
                 isMic =!isMic
+                viewBinding?.mic?.isSelected =isMic
                 mRtcEngine?.muteLocalAudioStream(isMic)
             }
             R.id.camera->{
-                if (isCamera){
-                    viewBinding?.camera?.setImageResource(R.drawable.img_switch)
-                }else{
-                    viewBinding?.camera?.setImageResource(R.drawable.img_switch_click)
-                }
                 isCamera =!isCamera
+                viewBinding?.camera?.isSelected=isCamera
                 mRtcEngine?.switchCamera()
             }
             R.id.leave->{
